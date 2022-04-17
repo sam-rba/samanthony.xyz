@@ -1,0 +1,29 @@
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+
+	background-color: black;
+	color: white;
+
+	font-family: sans-serif;
+}
+
+/* Navbar */
+nav {
+	background-color: #4acaa4;
+	font-size: 1.6em;
+}
+nav a {
+	font-size: 0.7em;
+	color: white;
+	text-decoration: none;
+}
+nav p:first-child + a { font-weight: bold; }
+nav a.this-section { font-style: italic; }
+nav p { display: inline; }
+nav p:first-child { margin-left: 0.1em; }
+nav hr {
+	margin: 0px;
+	color: white;
+}

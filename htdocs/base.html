@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Child templates can choose to overwrite the default title -->
+		{{ define "title" }}<title>samanthony.xyz</title>{{ end }}
+		{{ template "title" }}
+
+		<!-- Child templates can apply their own styles -->
+		{{ define "style" }}{{ end }}
+		{{ template "style" }}
+		<link rel="stylesheet" href="/style.css">
+	</head>
+	<body>
+		<nav>
+			{{ $this_section := .Nav.ThisSection }}
+			{{ range .Nav.Links }}
+				{{ if eq .Href $this_section }}
+					<p>/</p><a class="this-section" href="{{ .Href }}">{{ .Label }}</a>
+				{{else }}
+					<p>|</p><a href="{{ .Href }}">{{ .Label }}</a>
+				{{ end }}
+			{{ end }}
+			<hr>
+		</nav>
+		{{ template "body_content" }}
+	</body>
+</html>
