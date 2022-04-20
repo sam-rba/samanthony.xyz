@@ -1,3 +1,4 @@
+/* General */
 body {
 	margin-left: 0px;
 	margin-right: 0px;
@@ -9,21 +10,31 @@ body {
 	font-family: sans-serif;
 }
 
+a { text-decoration: none; }
+a:hover {
+	text-decoration: underline;
+	text-decoration-thickness: 0.055em;
+}
+
 /* Navbar */
-nav {
-	background-color: #4acaa4;
-	font-size: 1.6em;
-}
+nav { background-color: #4acaa4; }
+
 nav a {
-	font-size: 0.7em;
+	margin-left: 0.2em;
+
+	font-size: 1.6em;
+	font-weight: normal;
 	color: white;
-	text-decoration: none;
 }
-nav p:first-child + a { font-weight: bold; }
-nav a.this-section { font-style: italic; }
-nav p { display: inline; }
-nav p:first-child { margin-left: 0.1em; }
+
+nav a:first-child .label { font-weight: bold; }
+
+nav .label { font-size: 0.7em; }
+
+nav .this-section { font-style: italic; }
+
 nav hr {
 	margin: 0px;
+
 	color: white;
 }

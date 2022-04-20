@@ -17,9 +17,13 @@
 			{{ $this_section := .Nav.ThisSection }}
 			{{ range .Nav.Links }}
 				{{ if eq .Href $this_section }}
-					<p>/</p><a class="this-section" href="{{ .Href }}">{{ .Label }}</a>
+					<a class="this-section" href="{{ .Href }}">
+						/<span class="label">{{ .Label }}</span>
+					</a>
 				{{else }}
-					<p>|</p><a href="{{ .Href }}">{{ .Label }}</a>
+					<a href="{{ .Href }}">
+						|<span class="label">{{ .Label }}</span>
+					</a>
 				{{ end }}
 			{{ end }}
 			<hr>
