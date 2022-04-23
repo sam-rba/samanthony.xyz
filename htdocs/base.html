@@ -7,10 +7,12 @@
 		{{ define "title" }}<title>samanthony.xyz</title>{{ end }}
 		{{ template "title" }}
 
+		<link rel="stylesheet" href="/css/style.css">
 		<!-- Child templates can apply their own styles -->
 		{{ define "style" }}{{ end }}
 		{{ template "style" }}
-		<link rel="stylesheet" href="/style.css">
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="/css/syntax.css">
 	</head>
 	<body>
 		<nav>
@@ -28,6 +30,8 @@
 			{{ end }}
 			<hr>
 		</nav>
-		{{ template "body_content" }}
+		<main>
+			{{ template "body_content" }}
+		</main>
 	</body>
 </html>
