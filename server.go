@@ -96,7 +96,8 @@ func init() {
 			return nil
 		}
 		label := path[len(fp.Clean(root)):]
-		tmpl[label] = template.Must(template.ParseFiles(fp.Join(root, "base.html"), path))
+		tmpl[label] = template.Must(template.ParseFiles(
+			fp.Join(root, "base.html"), path))
 		return nil
 	})
 	if err != nil {
