@@ -4,7 +4,13 @@
 	--highlight-color: #4acaa4;
 }
 
+html { height: 100%; }
+
 body {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
 	background-color: var(--bg-color);
 	color: var(--fg-color);
 
@@ -12,8 +18,9 @@ body {
 }
 
 main {
-	margin: auto;
+	margin-bottom: auto;
 	max-width: 80em;
+
 	padding-left: 1em;
 	padding-right: 1em;
 }
@@ -65,3 +72,13 @@ nav a {
 nav a:first-child .label { font-weight: bold; }
 nav .label { font-size: 0.7em; }
 nav .this-section { font-style: italic; }
+
+/* Footer */
+footer {
+	background-color: var(--highlight-color);
+	text-align: center;
+}
+footer a {
+	color: var(--fg-color);
+	font-style: italic;
+}
