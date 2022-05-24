@@ -19,10 +19,9 @@ body {
 
 main {
 	margin-bottom: auto;
+	align-self: center;
 	max-width: 80em;
-
-	padding-left: 1em;
-	padding-right: 1em;
+	width: 95vw;
 }
 
 .hanging-indent {
