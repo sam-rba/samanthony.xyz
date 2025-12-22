@@ -1,0 +1,4 @@
+baseURL = 'https://www.samanthony.xyz/'
+languageCode = 'en-us'
+title = "Sam Anthony's Webpage"
+theme = 'aoidh'
