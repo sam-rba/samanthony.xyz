@@ -1,6 +1,6 @@
 baseURL = 'https://www.samanthony.xyz/'
 languageCode = 'en-us'
-title = "Sam Anthony's Webpage"
+title = "Sam Anthony"
 theme = 'aoidh'
 
 [params]

@@ -66,6 +66,18 @@ ul {
   padding: 0;
 }
 
+h1 {
+  font-size: 130%;
+}
+
+h2 {
+  font-size: 120%;
+}
+
+h3 {
+  font-size: 110%;
+}
+
 p {
   text-align: justify;
   hyphens: auto;
@@ -73,11 +85,11 @@ p {
 }
 
 a {
-  text-decoration: underline;
+  text-decoration: none;
   border: 1px solid transparent;
 }
 
-a:hover, nav a:focus {
+a:hover {
   text-decoration: none;
   color: #000;
   background: var(--light-blue);
@@ -88,4 +100,23 @@ a:active {
   color: #000;
   background: var(--light-blue);
   border: 1px solid var(--dark-blue);
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+thead tr {
+  border: 1px solid #000;
+}
+
+tr {
+  border: 1px solid var(--dark-gray);
+}
+
+th, td {
+  padding: .15rem .6rem .15rem;
+  vertical-align: middle;
 }
