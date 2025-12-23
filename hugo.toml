@@ -2,5 +2,19 @@ baseURL = 'https://www.samanthony.xyz/'
 languageCode = 'en-us'
 title = "Sam Anthony's Webpage"
 theme = 'aoidh'
+
 [params]
-	author = "Sam Anthony"
+  author = "Sam Anthony"
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+
+  [[menus.main]]
+    name = 'Posts'
+    pageRef = '/posts'
+
+  [[menus.main]]
+    name = 'Tags'
+    pageRef = '/tags'
