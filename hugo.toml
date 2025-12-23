@@ -4,7 +4,9 @@ title = "Sam Anthony's Webpage"
 theme = 'aoidh'
 
 [params]
-  author = "Sam Anthony"
+  [params.author]
+    name = "Sam Anthony"
+    email = "sam@samanthony.xyz"
 
 [menus]
   [[menus.main]]
