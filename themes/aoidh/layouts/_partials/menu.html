@@ -21,13 +21,13 @@ Renders a menu for the given menu ID.
 {{- define "_partials/inline/menu/walk.html" }}
   {{- $page := .page }}
   {{- range .menuEntries }}
-    <li>
+    <li
+    {{ if $page.IsMenuCurrent .Menu . }}
+      class="nav-active"
+    {{ else if $page.HasMenuCurrent .Menu . }}
+      class="nav-ancestor"
+    {{ end }}>
       <a
-      {{ if $page.IsMenuCurrent .Menu . }}
-        class="nav-active"
-      {{ else if $page.HasMenuCurrent .Menu . }}
-        class="nav-ancestor"
-      {{ end }}
       {{ printf "href=%q" .URL | safeHTMLAttr }}
       >{{ .Name }}</a>
       {{- with .Children }}
