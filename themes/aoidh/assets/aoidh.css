@@ -39,18 +39,13 @@ header {
 }
 
 nav ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(6.5rem, 1fr));
+  gap: .4rem .8rem;
 }
 
 nav li {
   display: inline-block;
-  width: 16.66666667%; /* 1/6 */
-  margin: .1rem 0 .1rem 1.5rem;
-}
-
-nav li:first-child {
-  margin-left: 0;
 }
 
 nav a {
