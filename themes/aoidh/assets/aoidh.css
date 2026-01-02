@@ -76,6 +76,8 @@ p {
   text-align: justify;
   hyphens: auto;
   text-justify: inter-word;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 a {
@@ -97,15 +99,20 @@ a:active {
 }
 
 h1 {
-  font-size: 130%;
+  font-size: 1.3em;
 }
 
 h2 {
-  font-size: 120%;
+  font-size: 1.2em;
 }
 
 h3 {
-  font-size: 110%;
+  font-size: 1.1em;
+}
+
+h1, h2, h3 {
+  margin-block-end: .4em; /* above */
+  margin-block-start: .8em; /* below */
 }
 
 table {
@@ -126,4 +133,17 @@ tbody tr {
 th, td {
   padding: .15rem .6rem .15rem;
   vertical-align: middle;
+}
+
+footer {
+  font-size: 90%;
+}
+
+footer hr {
+  margin-top: 2rem;
+  margin-bottom: .4rem;
+}
+
+hr {
+  border-top: .1rem solid #000;
 }
