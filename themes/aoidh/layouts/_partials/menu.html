@@ -25,7 +25,7 @@ Renders a menu for the given menu ID.
     {{- if $page.IsMenuCurrent .Menu . -}}
       {{- printf " class=%q" "nav-active" | safeHTMLAttr -}}
     {{- else if $page.HasMenuCurrent .Menu . -}}
-      {{- printf "class=%q" "nav-ancestor" | safeHTMLAttr -}}
+      {{- printf " class=%q" "nav-ancestor" | safeHTMLAttr -}}
     {{- end -}}>
       <a
       {{ printf "href=%q" .URL | safeHTMLAttr }}
