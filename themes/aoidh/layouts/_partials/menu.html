@@ -22,11 +22,11 @@ Renders a menu for the given menu ID.
   {{- $page := .page }}
   {{- range .menuEntries }}
     <li
-    {{ if $page.IsMenuCurrent .Menu . }}
-      class="nav-active"
-    {{ else if $page.HasMenuCurrent .Menu . }}
-      class="nav-ancestor"
-    {{ end }}>
+    {{- if $page.IsMenuCurrent .Menu . -}}
+      {{- printf " class=%q" "nav-active" | safeHTMLAttr -}}
+    {{- else if $page.HasMenuCurrent .Menu . -}}
+      {{- printf "class=%q" "nav-ancestor" | safeHTMLAttr -}}
+    {{- end -}}>
       <a
       {{ printf "href=%q" .URL | safeHTMLAttr }}
       >{{ .Name }}</a>
