@@ -1,5 +1,5 @@
 +++
-title = 'Posts'
+title = 'Articles'
 date = 2025-12-23T08:30:00-07:00
 draft = false
 +++
