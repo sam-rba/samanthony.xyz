@@ -135,13 +135,14 @@ th, td {
   vertical-align: middle;
 }
 
-footer {
-  font-size: 90%;
-}
-
 footer hr {
   margin-top: 2rem;
   margin-bottom: .4rem;
+}
+
+footer p {
+  font-size: 90%;
+  text-align: left;
 }
 
 hr {
