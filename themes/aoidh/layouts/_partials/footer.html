@@ -1,0 +1,17 @@
+<hr>
+<p>
+{{- with index (sort .Site.RegularPages "Date" "asc") 0 -}}
+  {{ $epoch := .Date }}
+  {{- with index (sort .Site.Pages "Lastmod" "desc") 0 -}}
+    {{ $lastMod := .Lastmod }}
+    {{- if gt $lastMod.Year $epoch.Year -}}
+      Copyright {{ $epoch.Year -}}&ndash;{{- $lastMod.Year -}}
+    {{- else -}}
+      Copyright {{ $epoch.Year -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- with .Site.Params.author.name -}}
+  , {{ . }}
+{{- end -}}
+. All rights reserved.</p>

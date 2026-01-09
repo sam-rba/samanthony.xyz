@@ -1,0 +1,25 @@
+baseURL = 'https://www.samanthony.xyz/'
+languageCode = 'en-us'
+title = "Sam Anthony"
+theme = 'aoidh'
+
+[params]
+  [params.author]
+    name = "Sam Anthony"
+    email = "sam@samanthony.xyz"
+
+[menus]
+  [[menus.main]]
+    name = 'Home'
+    pageRef = '/'
+    weight = 1
+
+  [[menus.main]]
+    name = 'Articles'
+    pageRef = '/articles'
+    weight = 2
+
+  [[menus.main]]
+    name = 'Projects'
+    url = 'http://git.samanthony.xyz/'
+    weight = 3

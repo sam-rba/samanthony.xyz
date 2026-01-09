@@ -1,2 +1,2 @@
-/devserver
-/webserver
+.hugo_build.lock
+public/
