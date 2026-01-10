@@ -185,7 +185,7 @@ div {
 
 ul {
   margin: 0;
-  margin-block: 0 var(--parspace);
+  margin-block: 0 1em;
   padding: 0;
   padding-inline-start: 2em;
 }

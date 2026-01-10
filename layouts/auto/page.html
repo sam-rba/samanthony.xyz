@@ -1,0 +1,6 @@
+{{ define "main" }}
+  <h1 class="title">{{ .Title }}</h1>
+  {{ .Content }}
+  <h1>Spreadsheets</h1>
+  {{- partial "asset_table.html" (resources.Match "auto/*.ods") }}
+{{ end }}
