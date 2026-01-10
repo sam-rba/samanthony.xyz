@@ -2,7 +2,7 @@
 title = 'Tools I Use'
 date = '2026-01-02T15:24:53-03:30'
 tags = []
-draft = true
+draft = false
 +++
 
 Here is a list of some of the tools I use day-to-day.
