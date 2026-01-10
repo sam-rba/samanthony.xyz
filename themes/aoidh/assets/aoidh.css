@@ -16,7 +16,7 @@ html {
 
 body {
   margin: 1rem auto;
-  padding: .5rem 1rem .25rem;
+  padding: 1rem;
   max-width: 60rem;
   border: 1px solid var(--dark-yellow);
   box-shadow: 2px 2px var(--dark-yellow);
@@ -30,9 +30,8 @@ body {
   background: #fff;
 }
 
-.content {
-  margin-left: auto;
-  margin-right: auto;
+#content {
+  margin: 0 auto;
   max-width: 45rem;
 }
 
@@ -142,14 +141,23 @@ th, td {
   vertical-align: middle;
 }
 
-footer hr {
+footer {
   margin-top: 2rem;
-  margin-bottom: .4rem;
+}
+
+footer hr {
+  margin-top: 0;
+  margin-bottom: .4em;
 }
 
 footer p {
   font-size: 90%;
   text-align: left;
+  margin-bottom: .1em;
+}
+
+footer :last-child {
+  margin-bottom: 0;
 }
 
 hr {
