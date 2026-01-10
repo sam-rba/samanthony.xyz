@@ -17,11 +17,10 @@ modification times.
     </tr>
   </thead>
   <tbody>
-  {{ range . }}
-    {{- $fpath := printf "assets/%s" .Name -}}
+  {{- range . }}
     <tr>
       <td>
-      {{- with os.Stat $fpath -}}
+      {{- with os.Stat (path.Join "assets/" .Name) -}}
         {{- .ModTime | time.Format "2006-01-02" -}}
       {{- end -}}
       </td>
