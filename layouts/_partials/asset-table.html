@@ -1,0 +1,33 @@
+{{- /*
+For a given collection of global resources, render a table with
+the modification date of each resource and a link to the resource.
+The resources must be from the assets/ directory and each must
+have a corresponding .moddate file, e.g., assets/foo/bar.txt and
+assets/foo/bar.txt.moddate containing "1999-01-02". This is to preserve
+the modification times of files when the repository is cloned.
+
+@context {.} resource.Resources
+
+@example: {{ partial "asset-table.html" (resources.Match "spreadsheets/*.ods") }}
+*/}}
+
+<table>
+  <thead>
+    <tr>
+      <th>Mod. date</th>
+      <th>File</th>
+    </tr>
+  </thead>
+  <tbody>
+  {{- range . }}
+    <tr>
+      <td>
+      {{- with resources.Get (printf "%s.moddate" .Name) -}}
+        {{- chomp .Content | time | dateFormat "2006-01-02" -}}
+      {{- end -}}
+      </td>
+      <td><a href="{{ .RelPermalink }}">{{ path.Base .Name }}</a></td>
+    </tr>
+  {{- end }}
+  </tbody>
+</table>
