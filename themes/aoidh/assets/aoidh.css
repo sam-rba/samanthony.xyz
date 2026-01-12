@@ -7,7 +7,11 @@
   --light-gray: #eee;
   --dark-gray: #888;
 
+  --pagewidth: 60rem;
   --parspace: .6em;
+
+  --letter-page-width: 8.5in;
+  --letter-page-height: 11in;
 }
 
 html {
@@ -17,7 +21,7 @@ html {
 body {
   margin: 1rem auto;
   padding: 1rem;
-  max-width: 60rem;
+  max-width: var(--pagewidth);
   border: 1px solid var(--dark-yellow);
   box-shadow: 2px 2px var(--dark-yellow);
 }
@@ -188,4 +192,12 @@ ul {
   margin-block: 0 1em;
   padding: 0;
   padding-inline-start: 2em;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  height: var(--letter-page-height);
+  border: 1px solid var(--dark-yellow);
+  box-shadow: 2px 2px var(--dark-yellow);
 }
