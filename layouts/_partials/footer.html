@@ -1,24 +1,18 @@
 <hr>
-<p>
-  {{- with index (sort .Site.RegularPages "Date" "asc") 0 -}}
-    {{ $epoch := .Date }}
-    {{- with index (sort .Site.Pages "Lastmod" "desc") 0 -}}
-      {{ $lastMod := .Lastmod }}
-      {{- if gt $lastMod.Year $epoch.Year -}}
-        Copyright {{ $epoch.Year -}}&ndash;{{- $lastMod.Year -}}
-      {{- else -}}
-        Copyright {{ $epoch.Year -}}
-      {{- end -}}
-    {{- end -}}
-  {{- end -}}
-  {{- with .Site.Params.author.name -}}
-    , {{ . }}
-  {{- end -}}
-  . All rights reserved.
-</p>
+<p>{{ partial "copyright.html" . }}</p>
 <p>
   Powered by
-  <a href="https://gohugo.io/">Hugo</a> and
+  <a href="https://gohugo.io/">Hugo</a>,
+  <a href="https://www.openbsd.org/">OpenBSD</a>, and
   <a href="https://freedns.afraid.org/">Free&nbsp;DNS</a>.
-  <a href="https://git.samanthony.xyz/samanthony.xyz/">Source&nbsp;code&nbsp;→</a>
+</p>
+<p>
+  {{- $repoUrl := .Site.Params.Repo.Url }}
+  {{- with .GitInfo }}
+    {{- $baseUrl := urls.JoinPath $repoUrl "/commit/" }}
+    {{- $commitUrl := printf "%s?id=%s" $baseUrl .Hash }}
+    Last modified {{ .CommitDate.Format "2006-01-02" }}:
+    <a href="{{ $commitUrl }}">{{ .AbbreviatedHash }}</a>.
+    <a href="{{ $repoUrl }}">Source&nbsp;code&nbsp;→</a>
+  {{- end }}
 </p>

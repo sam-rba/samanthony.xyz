@@ -1,12 +1,15 @@
 baseURL = 'https://www.samanthony.xyz/'
 languageCode = 'en-us'
-title = "Sam Anthony"
+title = 'Sam Anthony'
 theme = 'aoidh'
+enableGitInfo = true
 
 [params]
   [params.author]
-    name = "Sam Anthony"
-    email = "sam@samanthony.xyz"
+    name = 'Sam Anthony'
+    email = 'sam@samanthony.xyz'
+  [params.repo]
+    url = 'https://git.samanthony.xyz/samanthony.xyz/'
 
 [menus]
   [[menus.main]]

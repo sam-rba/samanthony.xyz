@@ -1,0 +1,11 @@
+{{- $oldest := (index .Site.RegularPages.ByDate 0).Date.Year }}
+{{- $newest := (index .Site.Pages.ByLastmod.Reverse 0).Lastmod.Year }}
+{{- if gt $newest $oldest }}
+  Copyright {{ $oldest }}&ndash;{{ $newest }}
+{{- else }}
+  Copyright {{ $newest }}
+{{- end }}
+{{- with .Site.Params.author.name -}}
+  , {{ . }}
+{{- end -}}
+.
