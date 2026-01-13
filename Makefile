@@ -2,7 +2,7 @@ build:
 	hugo build
 
 publish: build
-	rsync -rz public/ samanthony.xyz:/var/www/htdocs/samanthony.xyz/
+	rsync -rz --delete public/ samanthony.xyz:/var/www/htdocs/samanthony.xyz/
 
 serve:
 	hugo serve -DEF

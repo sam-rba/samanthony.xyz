@@ -8,6 +8,7 @@
   --dark-gray: #888;
 
   --pagewidth: 60rem;
+  --textwidth: 45rem;
   --parspace: .6em;
 
   --letter-page-width: 8.5in;
@@ -36,7 +37,7 @@ body {
 
 #content {
   margin: 0 auto;
-  max-width: 45rem;
+  max-width: var(--textwidth);
 }
 
 header {
@@ -196,8 +197,10 @@ ul {
 
 iframe {
   display: block;
+  box-sizing: border-box;
   width: 100%;
-  height: var(--letter-page-height);
+  height: 90vh;
+  padding: .4rem;
   border: 1px solid var(--dark-yellow);
   box-shadow: 2px 2px var(--dark-yellow);
 }
