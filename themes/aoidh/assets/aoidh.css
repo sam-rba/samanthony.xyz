@@ -1,4 +1,5 @@
 :root {
+  /* Colors */
   --paper-color: #ffffea;
   --light-yellow: #eeee9e;
   --dark-yellow: #99994c;
@@ -7,10 +8,22 @@
   --light-gray: #eee;
   --dark-gray: #888;
 
+  /* Spacing */
   --pagewidth: 60rem;
   --textwidth: 45rem;
   --parspace: .6em;
 
+  /* IBM Plex Serif weights */
+  --thinweight: 100;
+  --extralightweight: 200;
+  --lightweight: 300;
+  --regularweight: 400;
+  --textweight: 450;
+  --mediumweight: 500;
+  --semiboldweight: 600;
+  --boldweight: 700;
+
+  /* US letter page dimensions */
   --letter-page-width: 8.5in;
   --letter-page-height: 11in;
 }
@@ -28,8 +41,10 @@ body {
 }
 
 body {
+  font-family: 'IBM Plex Serif', serif;
+  font-weight: 400;
+  font-size: 1rem;
   line-height: 1.35em;
-  font-family: serif;
   text-rendering: optimizeLegibility;
   color: #000;
   background: #fff;
@@ -67,12 +82,12 @@ nav a {
 }
 
 li.nav-active a {
-  font-weight: bold;
+  font-weight: var(--semiboldweight);
   box-shadow: .2rem .2rem var(--dark-yellow);
 }
 
 li.nav-ancestor a {
-  font-weight: bold;
+  font-weight: var(--semiboldweight);
 }
 
 nav a:active {
@@ -88,6 +103,7 @@ p {
 }
 
 a {
+  font-weight: var(--textweight);
   text-decoration: none;
   border: 1px solid transparent;
 }
@@ -107,23 +123,27 @@ a:active {
 
 .title {
   font-size: 1.4rem;
+  font-weight: var(--boldweight);
 }
 
 h1 {
-  font-size: 1.3rem;
+  font-size: 1.15rem;
+  font-weight: var(--semiboldweight);
 }
 
 h2 {
-  font-size: 1.2rem;
+  font-size: 1.10rem;
+  font-weight: var(--mediumweight);
 }
 
 h3 {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
+  font-weight: var(--textweight);
 }
 
 h1, h2, h3 {
-  margin-block-end: .4em; /* above */
-  margin-block-start: .8em; /* below */
+  margin-block-start: .8em;
+  margin-block-end: .4em;
 }
 
 table {
@@ -144,6 +164,10 @@ tbody tr {
 th, td {
   padding: .15rem .6rem .15rem;
   vertical-align: middle;
+}
+
+th {
+  font-weight: var(--mediumweight);
 }
 
 footer {
@@ -203,4 +227,10 @@ iframe {
   padding: .4rem;
   border: 1px solid var(--dark-yellow);
   box-shadow: 2px 2px var(--dark-yellow);
+}
+
+code {
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: var(--regularweight);
+  font-size: .9em;
 }
