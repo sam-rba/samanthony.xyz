@@ -1,16 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-
-{{/* Stylesheets */}}
 {{- with resources.Get "aoidh.css" }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- end }}
-
-{{/* Fonts */}}
-{{- range resources.Match "fonts/plex/packages/plex-serif/fonts/split/woff2/*.css" }}
-  <link rel="stylesheet" href="{{ .RelPermalink }}">
-{{- end }}
-{{- range resources.Match "fonts/plex/packages/plex-mono/fonts/split/woff2/*.css" }}
   <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- end }}
