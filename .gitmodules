@@ -2,5 +2,5 @@
 	path = static/resume
 	url = https://git.samanthony.xyz/resume
 [submodule "static/fonts/plex"]
-	path = modules/fonts/plex
+	path = themes/aoidh/assets/fonts/plex
 	url = https://github.com/IBM/plex.git

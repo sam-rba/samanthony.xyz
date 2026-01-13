@@ -2,3 +2,60 @@
   [module.hugoVersion]
     extended = false
     min = '0.146.0'
+  [[module.mounts]]
+    source = 'assets/fonts/plex/packages/plex-serif/fonts/split/woff2'
+    target = 'static/fonts/plex/packages/plex-serif/fonts/split/woff2'
+  [[module.mounts]]
+    source = 'assets/fonts/plex/packages/plex-mono/fonts/split/woff2'
+    target = 'static/fonts/plex/packages/plex-mono/fonts/split/woff2'
+
+  # Default mounts
+  [[module.mounts]]
+    disableWatch = false
+    source = 'content'
+    target = 'content'
+    [module.mounts.sites]
+      [module.mounts.sites.complements]
+      [module.mounts.sites.matrix]
+  [[module.mounts]]
+    disableWatch = false
+    source = 'data'
+    target = 'data'
+    [module.mounts.sites]
+      [module.mounts.sites.complements]
+      [module.mounts.sites.matrix]
+  [[module.mounts]]
+    disableWatch = false
+    source = 'layouts'
+    target = 'layouts'
+    [module.mounts.sites]
+      [module.mounts.sites.complements]
+      [module.mounts.sites.matrix]
+  [[module.mounts]]
+    disableWatch = false
+    source = 'i18n'
+    target = 'i18n'
+    [module.mounts.sites]
+      [module.mounts.sites.complements]
+      [module.mounts.sites.matrix]
+  [[module.mounts]]
+    disableWatch = false
+    source = 'archetypes'
+    target = 'archetypes'
+    [module.mounts.sites]
+      [module.mounts.sites.complements]
+      [module.mounts.sites.matrix]
+  [[module.mounts]]
+    disableWatch = false
+    source = 'assets'
+    target = 'assets'
+    [module.mounts.sites]
+      [module.mounts.sites.complements]
+      [module.mounts.sites.matrix]
+  [[module.mounts]]
+    disableWatch = false
+    source = 'static'
+    target = 'static'
+    [module.mounts.sites]
+      [module.mounts.sites.complements]
+      [module.mounts.sites.matrix]
