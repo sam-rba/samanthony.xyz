@@ -78,6 +78,7 @@ li.nav-ancestor a {
 
 nav a:active {
   box-shadow: 0 0;
+  text-decoration: none;
 }
 
 p {
@@ -103,8 +104,8 @@ a:hover {
 a:active {
   text-decoration: none;
   color: #000;
+  text-decoration: underline;
   background: var(--light-blue);
-  border: 1px solid var(--dark-blue);
 }
 
 .title {
@@ -135,11 +136,13 @@ table {
   border-collapse: collapse;
   text-align: left;
   margin-bottom: 1rem;
+  border-left: .2rem solid var(--dark-blue);
+  box-shadow: .2rem .2rem var(--light-gray);
 }
 
 thead tr {
-  border: 1px solid #000;
   background: var(--light-blue);
+  border: 1px solid #000;
 }
 
 tbody tr {
@@ -147,7 +150,7 @@ tbody tr {
 }
 
 th, td {
-  padding: .15rem .6rem .15rem;
+  padding: .125em .4em;
   vertical-align: middle;
 }
 
