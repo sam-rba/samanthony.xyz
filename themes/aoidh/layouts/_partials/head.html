@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
-{{- with resources.Get "aoidh.css" }}
+{{- with resources.Get "aoidh.css" | minify }}
   <link rel="stylesheet" href="{{ .RelPermalink }}">
 {{- end }}
