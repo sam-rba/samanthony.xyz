@@ -1,11 +1,12 @@
 +++
-title = 'Auto'
+title = 'Automotive Spreadsheets'
 date = '2026-01-10T17:22:57-05:00'
-tags = []
+tags = ["Cars"]
 draft = false
+layout = "automotive-spreadsheets"
 +++
 
-Collection of automotive-related spreadsheets for calculating suspension dynamics, brake bias, and so on.
+Collection of spreadsheets for calculating suspension dynamics, brake bias, and so on.
 _I'm not an engineer, so use at your own risk._
 
 They're pieced together using information from several sources:

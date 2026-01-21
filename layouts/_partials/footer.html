@@ -13,6 +13,6 @@
     {{- $commitUrl := printf "%s?id=%s" $baseUrl .Hash }}
     Last modified {{ .CommitDate.Format "2006-01-02" }}:
     <a href="{{ $commitUrl }}">{{ .AbbreviatedHash }}</a>.
-    <a href="{{ $repoUrl }}">Source&nbsp;code&nbsp;→</a>
   {{- end }}
+  <a href="{{ $repoUrl }}">Source&nbsp;code&nbsp;→</a>
 </p>

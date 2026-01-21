@@ -179,6 +179,8 @@ footer :last-child {
 
 hr {
   border-top: .1rem solid #000;
+  margin-top: 0;
+  margin-bottom: 1em;
 }
 
 blockquote {
