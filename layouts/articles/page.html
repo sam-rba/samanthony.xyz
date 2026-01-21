@@ -1,5 +1,6 @@
 {{ define "main" }}
   {{ partial "articles/header.html" . }}
   {{ .Content }}
+  {{ partial "assets" .Params.Assets }}
   {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
 {{ end }}

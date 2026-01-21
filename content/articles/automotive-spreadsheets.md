@@ -3,7 +3,8 @@ title = 'Automotive Spreadsheets'
 date = '2026-01-10T17:22:57-05:00'
 tags = ["Cars"]
 draft = false
-layout = "automotive-spreadsheets"
+[assets]
+  'Spreadsheets' = 'auto/*.ods'
 +++
 
 Collection of spreadsheets for calculating suspension dynamics, brake bias, and so on.

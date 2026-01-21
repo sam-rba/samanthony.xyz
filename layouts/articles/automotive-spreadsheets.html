@@ -1,6 +1,0 @@
-{{ define "main" }}
-  {{ partial "articles/header.html" . }}
-  {{ .Content }}
-  {{ partial "asset-table.html" (resources.Match "auto/*.ods") }}
-  {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
-{{ end }}
