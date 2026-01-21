@@ -1,0 +1,26 @@
+{{- /*
+Renders a table of pages.
+
+@context {Page} . Current page.
+
+@example: {{ partial "page-list.html" .Pages }}
+*/}}
+
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Title</th>
+      <th><a href="{{ partial "taxonomy-url.html" (dict "taxonomy" "tags" "site" .Site) }}">Tags</a></th>
+    </tr>
+  </thead>
+  <tbody>
+    {{- range .Pages }}
+      <tr>
+        <td>{{ partial "date.html" .Date -}}</td>
+        <td><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></td>
+        <td>{{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}</td>
+      </tr>
+    {{- end }}
+  </tbody>
+</table>

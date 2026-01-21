@@ -1,0 +1,11 @@
+{{- /*
+Renders the URL of a taxonomy page.
+
+@context {string} taxonomy Name of the taxonomy.
+@context {site} site The site.
+
+@example: <a href="{{ partial "taxonomy-url.html" (dict taxonomy "tags" "site" .Site }}">tags</a>
+*/}}
+
+{{- $taxonomy := index .site.Taxonomies .taxonomy -}}
+{{- $taxonomy.Page.RelPermalink -}}

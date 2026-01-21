@@ -154,7 +154,7 @@ th, td {
   vertical-align: middle;
 }
 
-th {
+th, th * {
   font-weight: 500;
 }
 

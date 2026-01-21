@@ -6,7 +6,7 @@ have a corresponding .moddate file, e.g., assets/foo/bar.txt and
 assets/foo/bar.txt.moddate containing "1999-01-02". This is to preserve
 the modification times of files when the repository is cloned.
 
-@context {.} resource.Resources
+@context {resource.Resources} .
 
 @example: {{ partial "asset-table.html" (resources.Match "spreadsheets/*.ods") }}
 */}}

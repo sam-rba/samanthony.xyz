@@ -1,0 +1,19 @@
+{{ define "main" }}
+  {{- $taxonomy := .Data -}}
+  <h1 class="title">{{ .Title }}</h1>
+  {{ .Content }}
+  <table>
+    <thead><tr>
+      <th>{{ $taxonomy.Singular | humanize }}</th>
+      <th>Pages</th>
+    </thead>
+    <tbody>
+    {{- range $taxonomy.Terms.ByCount }}
+      <tr>
+        <td><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></td>
+        <td>{{ .Count }}</td>
+      </tr>
+    {{- end }}
+    </tbody>
+  </table>
+{{ end }}

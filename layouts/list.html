@@ -1,19 +1,4 @@
 {{ define "main" }}
   <h1 class="title">{{ .Title }}</h1>
-  <table>
-    <thead>
-      <tr>
-        <th>Date</th>
-        <th>Title</th>
-      </tr>
-    </thead>
-    <tbody>
-      {{ range .Pages }}
-        <tr>
-          <td>{{ partial "date.html" .Date -}}</td>
-          <td><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></td>
-        </tr>
-      {{ end }}
-    </tbody>
-  </table>
+  {{ partial "pages.html" . }}
 {{ end }}

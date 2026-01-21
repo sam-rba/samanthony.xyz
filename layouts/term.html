@@ -1,0 +1,6 @@
+{{ define "main" }}
+  {{- $term := .Data -}}
+  <h1 class="title">Pages with {{ $term.Singular | humanize }} &lsquo;{{ .Title }}&rsquo;</h1>
+  {{ .Content }}
+  {{- partial "pages.html" . -}}
+{{ end }}

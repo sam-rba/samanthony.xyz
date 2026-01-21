@@ -1,8 +1,0 @@
-<h1 class="title">{{ .Title }}</h1>
-<p>
-  {{- partial "date.html" .Date -}}
-  {{- if gt .Lastmod .Date -}}
-    &mdash; modified {{ partial "date.html" .Lastmod }}
-  {{- end -}}
-</p>
-<hr>
