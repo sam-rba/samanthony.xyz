@@ -194,8 +194,10 @@ cite {
 }
 
 img {
-  display: block;
-  margin: auto;
+  max-width: 100%;
+  max-height: 90vh;
+  border: 1px solid var(--dark-gray);
+  box-shadow: .2rem .2rem var(--light-gray);
 }
 
 div {
