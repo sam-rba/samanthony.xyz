@@ -1,0 +1,3 @@
+{{- $src := .Get "src" -}}
+<h1>Preview of <a href="{{ $src }}"><span class="mono">{{ path.Base $src }}</span></a></h1>
+<iframe src="{{ $src }}"></iframe>

@@ -1,0 +1,12 @@
+{{- $patterns := slice -}}
+{{- range split (.Get "patterns") "," }}
+  {{- $pattern := strings.TrimSpace . -}}
+  {{- $patterns = $patterns | append $pattern -}}
+{{- end -}}
+
+{{- $assets := slice -}}
+{{- range $patterns }}
+  {{- $assets = union $assets (resources.Match .) -}}
+{{- end -}}
+
+{{ partial "asset-table.html" $assets }}

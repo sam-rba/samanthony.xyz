@@ -3,8 +3,6 @@ title = 'Automotive Spreadsheets'
 date = '2026-01-10T17:22:57-05:00'
 tags = ["cars"]
 draft = false
-[assets]
-  'Spreadsheets' = 'auto/*.ods'
 +++
 
 Collection of spreadsheets for calculating suspension dynamics, brake bias, and so on.
@@ -17,3 +15,6 @@ They're pieced together using information from several sources:
 - _Race Car Vehicle Dynamics_, Milliken & Milliken, 1994.
 - [_Springs & Dampers_](https://optimumg.com/springsdampers1/): Parts One through Six, Matt Giaraffa: OptimumG, 2018.
 - _Tune to Win_, Carroll Smith, 1978.
+
+# Spreadsheets
+{{< asset-table patterns="auto/*.ods" >}}
