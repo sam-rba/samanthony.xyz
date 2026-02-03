@@ -14,4 +14,5 @@ draft = false
 | --- |
 | [PDF →](/transcript_redacted.pdf) |
 
-{{< preview src=/resume/resume.html >}}
+# Résumé preview
+![Résumé](/resume.png)

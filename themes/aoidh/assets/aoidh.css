@@ -194,6 +194,7 @@ cite {
 }
 
 img {
+  box-sizing: border-box;
   max-width: 100%;
   max-height: 90vh;
   border: 1px solid var(--dark-gray);
