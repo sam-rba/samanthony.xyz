@@ -48,22 +48,6 @@ Here is a list of some of the tools I use day-to-day.
 
 	Anyway, the T420s has a sturdy magnesium frame, a good keyboard, and a three-button touchpad which is essential for Acme and CAD programs---I don't know how people live without one.
 
-- iPod mini 1G ---
-	Hard to find a phone with a headphone jack these days.
-	The mini has one, as well as physical buttons and a touch rotary encoder---much nicer than using a touchscreen imo.
-	I want to get a full size iPod 1G with the physical scroll wheel at some point.
-
-	I replaced the battery with a new one and replaced the tiny (both physically and in terms of storage space) hard drive with a 128GB SD card.
-	Running [RockBox](https://www.rockbox.org/).
-	Works mint.
-
-- Casio F-91W ---
-	Cheap wristwatch that keeps time---what can I say?
-	If it's good enough for [al-Qaeda](https://en.wikipedia.org/wiki/Casio_F-91W#Usage_in_terrorism) then it's good enough for me.
-
-	Supposedly this is the most-sold watch in the world.
-	Casio has been making it since 1989.
-
 - [USBtin](https://www.fischl.de/usbtin/) ---
 	Simple USB-to-CAN interface by Thomas Fischl.
 	Works with [SocketCAN](https://docs.kernel.org/networking/can.html).
