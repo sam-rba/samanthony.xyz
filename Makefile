@@ -1,4 +1,4 @@
-build:
+build: static/resume.png
 	hugo build
 
 publish: build
@@ -9,3 +9,6 @@ serve:
 
 clean:
 	rm -rf public
+
+static/resume.png: static/resume.pdf
+	gs -dNOPAUSE -dBATCH -sDEVICE=png16m -r300 -sOutputFile=$@ $<
