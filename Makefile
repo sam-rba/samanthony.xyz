@@ -3,6 +3,9 @@ build: static/resume.png
 
 publish: build
 	rsync -rz --delete public/ samanthony.xyz:/var/www/htdocs/samanthony.xyz/
+	ipfs add -r public \
+		| tail -n1 | awk '{print $$2}' \
+		| xargs -I{} ssh samanthony.xyz "IPFS_PATH=/var/kubo ipfs pin add -r {}"
 
 serve:
 	hugo serve -DEF

@@ -3,6 +3,7 @@ languageCode = 'en-us'
 title = 'Sam Anthony'
 theme = 'aoidh'
 enableGitInfo = true
+relativeURLs = true
 
 [params]
   [params.author]
