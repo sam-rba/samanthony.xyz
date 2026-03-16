@@ -1,6 +1,6 @@
 MODS = themes/aoidh static/resume
 
-build: static/resume.png
+build: ${MODS} static/resume.png
 	hugo build
 
 publish: build
@@ -19,5 +19,4 @@ static/resume.png: static/resume.pdf
 	gs -dNOPAUSE -dBATCH -sDEVICE=png16m -r300 -sOutputFile=$@ $<
 
 ${MODS}:
-	git submodule init
-	git submodule update --recursive
+	git submodule update --init --recursive
