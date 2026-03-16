@@ -1,9 +1,6 @@
 [submodule "static/resume"]
 	path = static/resume
 	url = https://git.samanthony.xyz/resume
-[submodule "static/fonts/plex"]
-	path = modules/fonts/plex
-	url = https://github.com/IBM/plex.git
 [submodule "themes/aoidh"]
 	path = themes/aoidh
 	url = https://git.samanthony.xyz/aoidh
