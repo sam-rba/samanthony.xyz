@@ -5,14 +5,8 @@ tags = []
 draft = false
 +++
 
-| Résumé |
-| --- |
-| [PDF →](/resume.pdf) |
-| [HTML →](/resume/resume.html)
-
-| University transcript |
-| --- |
-| [PDF →](/transcript_redacted.pdf) |
+- [Résumé PDF →](/resume.pdf)
+- [University transcript PDF →](/transcript_redacted.pdf)
 
 # Résumé preview
 ![Résumé](/resume.png)

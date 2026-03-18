@@ -1,6 +1,3 @@
-[submodule "static/resume"]
-	path = static/resume
-	url = https://git.samanthony.xyz/resume
 [submodule "themes/aoidh"]
 	path = themes/aoidh
 	url = https://git.samanthony.xyz/aoidh
