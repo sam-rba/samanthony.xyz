@@ -11,8 +11,8 @@ For a given taxonomy, renders a comma-separated list of terms assigned to the pa
 {{- $page := .page }}
 
 {{- with $page.GetTerms $taxonomy -}}
-  {{- range $index, $term := . -}}
-    {{- if $index }}, {{ end -}}
-    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-  {{- end -}}
+	{{- range $index, $term := . -}}
+		{{- if $index }}, {{ end -}}
+		<a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+	{{- end -}}
 {{- end -}}

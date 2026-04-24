@@ -1,18 +1,18 @@
 <hr>
 <p>{{ partial "copyright.html" . }}</p>
 <p>
-  Powered by
-  <a href="https://gohugo.io/">Hugo</a>,
-  <a href="https://www.openbsd.org/">OpenBSD</a>, and
-  <a href="https://freedns.afraid.org/">Free&nbsp;DNS</a>.
+	Powered by
+	<a href="https://gohugo.io/">Hugo</a>,
+	<a href="https://www.openbsd.org/">OpenBSD</a>, and
+	<a href="https://freedns.afraid.org/">Free&nbsp;DNS</a>.
 </p>
 <p>
-  {{- $repoUrl := .Site.Params.Repo.Url }}
-  {{- with .GitInfo }}
-    {{- $baseUrl := urls.JoinPath $repoUrl "/commit/" }}
-    {{- $commitUrl := printf "%s?id=%s" $baseUrl .Hash }}
-    Last modified {{ .CommitDate.Format "2006-01-02" }}:
-    <a href="{{ $commitUrl }}">{{ .AbbreviatedHash }}</a>.
-  {{- end }}
-  <a href="{{ $repoUrl }}">Source&nbsp;code&nbsp;→</a>
+	{{- $repoUrl := .Site.Params.Repo.Url }}
+	{{- with .GitInfo }}
+		{{- $baseUrl := urls.JoinPath $repoUrl "/commit/" }}
+		{{- $commitUrl := printf "%s?id=%s" $baseUrl .Hash }}
+		Last modified {{ .CommitDate.Format "2006-01-02" }}:
+		<a href="{{ $commitUrl }}">{{ .AbbreviatedHash }}</a>.
+	{{- end }}
+	<a href="{{ $repoUrl }}">Source&nbsp;code&nbsp;→</a>
 </p>

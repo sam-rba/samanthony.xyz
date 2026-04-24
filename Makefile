@@ -1,7 +1,11 @@
-MODS = themes/aoidh static/resume
+MODS = $(shell git submodule | awk '{print $$2}')
 
-build: ${MODS} static/resume.png
+build: fmt ${MODS} static/resume.png
 	hugo build
+	find public -name '*.html' -exec tidy -mqi {} \;
+
+fmt:
+	gotmplfmt -w .
 
 publish: build
 	rsync -rz --delete public/ samanthony.xyz:/var/www/htdocs/samanthony.xyz/
@@ -20,3 +24,5 @@ static/resume.png: static/resume.pdf
 
 ${MODS}:
 	git submodule update --init --recursive
+
+.PHONY: build fmt publish serve clean

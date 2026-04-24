@@ -12,22 +12,22 @@ the modification times of files when the repository is cloned.
 */}}
 
 <table>
-  <thead>
-    <tr>
-      <th>Mod. date</th>
-      <th>File</th>
-    </tr>
-  </thead>
-  <tbody>
-  {{- range . }}
-    <tr>
-      <td>
-      {{- with resources.Get (printf "%s.moddate" .Name) -}}
-        {{- chomp .Content | time | dateFormat "2006-01-02" -}}
-      {{- end -}}
-      </td>
-      <td><a href="{{ .RelPermalink }}">{{ path.Base .Name }}</a></td>
-    </tr>
-  {{- end }}
-  </tbody>
+	<thead>
+		<tr>
+			<th>Mod. date</th>
+			<th>File</th>
+		</tr>
+	</thead>
+	<tbody>
+		{{- range . }}
+			<tr>
+				<td>
+					{{- with resources.Get (printf "%s.moddate" .Name) -}}
+						{{- chomp .Content | time | dateFormat "2006-01-02" -}}
+					{{- end -}}
+				</td>
+				<td><a href="{{ .RelPermalink }}">{{ path.Base .Name }}</a></td>
+			</tr>
+		{{- end }}
+	</tbody>
 </table>

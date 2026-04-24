@@ -1,15 +1,15 @@
 {{ define "main" }}
-  <h1 class="title">{{ .Title }}</h1>
-  <p>
-    {{- partial "date.html" .Date -}}
-    {{- if gt .Lastmod .Date -}}
-      &mdash; modified {{ partial "date.html" .Lastmod }}
-    {{- end -}}
-    <br>
-    {{- if .Page.GetTerms "tags" }}
-      Tags: {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) -}}.
-    {{- end }}
-  </p>
-  <hr>
-  {{ .Content }}
+<h1 class="title">{{ .Title }}</h1>
+<p>
+	{{- partial "date.html" .Date -}}
+	{{- if gt .Lastmod .Date -}}
+		&mdash; modified {{ partial "date.html" .Lastmod }}
+	{{- end -}}
+	<br>
+	{{- if .Page.GetTerms "tags" }}
+		Tags: {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) -}}.
+	{{- end }}
+</p>
+<hr>
+{{ .Content }}
 {{ end }}
