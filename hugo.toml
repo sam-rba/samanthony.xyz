@@ -1,7 +1,6 @@
 baseURL = 'https://www.samanthony.xyz/'
 languageCode = 'en-us'
 title = 'Sam Anthony'
-theme = 'aoidh'
 enableGitInfo = true
 relativeURLs = true
 
