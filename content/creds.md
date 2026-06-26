@@ -6,4 +6,4 @@ draft = false
 +++
 
 - [Résumé PDF →](/resume.pdf)
-- [University transcript PDF →](/transcript_redacted.pdf)
+- [University transcript PDF →](/transcript.pdf)
