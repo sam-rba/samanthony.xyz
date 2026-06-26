@@ -1,6 +1,6 @@
 MODS = $(shell git submodule | awk '{print $$2}')
 
-all: fmt ${MODS}
+build: fmt ${MODS}
 	hugo build
 	find public -name '*.html' -exec tidy -mqi {} \;
 
@@ -9,9 +9,6 @@ fmt:
 
 publish: build
 	rsync -rz --delete public/ samanthony.xyz:/var/www/htdocs/samanthony.xyz/
-	$(eval CID := $(shell ipfs add -r public | tail -n1 | awk '{print $$2}')) \
-	ssh m900 "IPFS_PATH=/var/kubo ipfs pin add -r ${CID}"
-	ipfs name publish --key=www.samanthony.xyz ${CID}
 
 serve: build
 	hugo serve -DEF
