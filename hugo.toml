@@ -4,6 +4,9 @@ title = 'Sam Anthony'
 enableGitInfo = true
 relativeURLs = true
 
+[markup.goldmark.renderer]
+unsafe = true
+
 [params]
   [params.author]
     name = 'Sam Anthony'

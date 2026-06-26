@@ -5,6 +5,8 @@ tags = []
 draft = false
 +++
 
-Browse source code at [git.samanthony.xyz](https://git.samanthony.xyz/).
-
-Mirrored at [github.com/sam-rba](https://github.com/sam-rba/).
+| Source code repositories | |
+| --- | --- |
+| Self-hosted | [git.samanthony.xyz/](https://git.samanthony.xyz/) |
+| Sourcehut | [sr.ht/~sma/](https://sr.ht/~sma/) |
+| Github | [github.com/sam-rba/](https://github.com/sam-rba/) |

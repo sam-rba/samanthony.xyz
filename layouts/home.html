@@ -1,3 +1,13 @@
 {{ define "main" }}
+
+<blockquote>
+	<code>
+		/* _nop() has been deprecated; use __nop() */<br>
+		#define _nop() __nop()
+	</code>
+	<cite>—<a href="https://www.microchip.com/en-us/tools-resources/develop/mplab-xc-compilers/xc8"><span class="mono">pic.h</span></a></cite>
+</blockquote>
+
 {{ .Content }}
+
 {{ end }}
