@@ -1,6 +1,6 @@
 MODS = $(shell git submodule | awk '{print $$2}')
 
-build: fmt ${MODS} static/resume.png
+all: fmt ${MODS}
 	hugo build
 	find public -name '*.html' -exec tidy -mqi {} \;
 
@@ -18,9 +18,6 @@ serve: build
 
 clean:
 	rm -rf public
-
-static/resume.png: static/resume.pdf
-	gs -dNOPAUSE -dBATCH -sDEVICE=png16m -r300 -sOutputFile=$@ $<
 
 ${MODS}:
 	git submodule update --init --recursive

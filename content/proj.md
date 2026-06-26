@@ -5,7 +5,7 @@ tags = []
 draft = false
 +++
 
-| Source code repositories | |
+| Git repositories | |
 | --- | --- |
 | Self-hosted | [git.samanthony.xyz/](https://git.samanthony.xyz/) |
 | Sourcehut | [sr.ht/~sma/](https://sr.ht/~sma/) |
