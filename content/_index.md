@@ -17,10 +17,10 @@ draft: false
 
 ![Headshot](img/headshot.jpg)
 
-| Contact | |
-| --- | --- |
-| Email | [sam@samanthony.xyz](mailto:sam@samanthony.xyz) |
-| Phone | +1 (709) 746 7582 |
+| Contact  |                                                                            |
+| ---      | ---                                                                        |
+| Email    | sam at samanthony dot xyz                                                  |
+| Phone    | +1 (709) 746 7582                                                          |
 | LinkedIn | [sam-anthony-4746252b5](https://www.linkedin.com/in/sam-anthony-4746252b5) |
 
 | Design philosophy | |
